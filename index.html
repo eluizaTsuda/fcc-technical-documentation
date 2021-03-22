@@ -15,9 +15,9 @@
 <body>
 
     <nav id="navbar">
-        <header>Website</header>
+        <header>Website xx</header>
         <ul id="navlinks">
-          <li><a class="nav-link" href="#Getting_started_with the Web">Getting started with the Web?</a></li>
+          <li><a class="nav-link" href="#Getting_started_with the Web">Getting started with the Web</a></li>
           <li><a class="nav-link" href="#Installing_basic_software">Installing basic software</a></li>
           <li><a class="nav-link" href="#What_will_your_website_look_like?">What will your website look like?</a></li>
           <li><a class="nav-link" href="#Dealling_with_files">Dealling with files</a></li>
@@ -29,142 +29,105 @@
           <li><a class="nav-link" href="#A_quick_JavaScript_example">A quick JavaScript example</a></li>
           <li><a class="nav-link" href="#Publishing_your_website">Publishing your website</a></li>
           <li><a class="nav-link" href="#How_the_Web_works">How the Web works</a></li>
-          <li><a class="nav-link" href="#Applying HTML, CSS and JavaScript">Applying HTML, CSS and JavaScript</a></li>
+          <li><a class="nav-link" href="#A_quick_example_applying_HTML,_CSS_and_JavaScript">A quick example applying HTML, CSS and JavaScript</a></li>
           <li><a class="nav-link" href="#See_also">See also</a></li>
           <li><a class="nav-link" href="#Reference">Reference</a></li>
         </ul>
       </nav>
 
       <main id="main-doc">
-        <section class="main-section" id="What_is_JavaScript?">
-            <header>What is JavaScript?</header>
+        <section class="main-section" id="Getting_started_with the Web">
+            <header>Getting started with the Web</header>
             <p>
-                JavaScript is a programming language that adds interactivity to your website. This happens in games, in the behavior of responses when buttons are pressed or with data entry on forms; with dynamic styling; with animation, etc. This article helps you get started with JavaScript and furthers your understanding of what is possible.
+                Getting started with the Web is a concise series introducing you to the practicalities of web development. You'll set up the tools you need to construct a simple webpage and publish your own simple code.
             </p>
+            <p>The story of your first website</p>
             <p>
-                <a href="https://developer.mozilla.org/en-US/docs/Glossary/JavaScript" target="_blank">JavaScript</a> ("JS" for short) is a full-fledged <a href="https://developer.mozilla.org/en-US/docs/Glossary/Dynamic_programming_language" target="_blank">dynamic programming language</a> that can add interactivity to a website. It was invented by Brendan Eich (co-founder of the Mozilla project, the Mozilla Foundation, and the Mozilla Corporation).
+                It's a lot of work to create a professional website, so if you're new to web development, we encourage you to start small. You won't build another Facebook right away, but it's not hard to make your own simple website online, so we'll start there..
             </p>    
-            <p>JavaScript is versatile and beginner-friendly. With more experience, you'll be able to create games, animated 2D and 3D graphics, comprehensive database-driven apps, and much more!</p>
-
-            <p>JavaScript itself is relatively compact, yet very flexible. Developers have written a variety of tools on top of the core JavaScript language, unlocking a vast amount of functionality with minimum effort. These include:</p>
-
-            <ul>
-                <li>
-                    Browser Application Programming Interfaces (<a href="https://developer.mozilla.org/en-US/docs/Glossary/API" target="_blank">APIs</a>) built into web browsers, providing functionality such as dynamically creating HTML and setting CSS styles; collecting and manipulating a video stream from a user's webcam, or generating 3D graphics and audio samples
-                </li>
-                <li>
-                    Third-party APIs that allow developers to incorporate functionality in sites from other content providers, such as Twitter or Facebook. 
-                </li>
-                <li>
-                    Third-party frameworks and libraries that you can apply to HTML to accelerate the work of building sites and applications.
-                </li>
-            </ul>
-
-            <p>It's outside the scope of this article—as a light introduction to JavaScript—to present the details of how the core JavaScript language is different from the tools listed above. You can learn more in MDN's <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript" target="_blank">JavaScript learning area</a>, as well as in other parts of MDN.</p>
-
-            <p>The section below introduces some aspects of the core language and offers an opportunity to play with a few browser API features too. Have fun!</p>
-        </section>
-        <section class="main-section" id="A_Hello_world!_example">
-            <header>A Hello world! example</header>
-            
-            <p>JavaScript is one of the most popular modern web technologies! As your JavaScript skills grow, your websites will enter a new dimension of power and creativity.</p>
-            
-            <p>However, getting comfortable with JavaScript is more challenging than getting comfortable with HTML and CSS. You may have to start small, and progress gradually. To begin, let's examine how to add JavaScript to your page for creating a Hello world! example. (Hello world! is <a href="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program" target="_blank">the standard for introductory programming examples</a>.)</p>
-
-            <blockquote>
-                Important: If you haven't been following along with the rest of our course, download this example code and use it as a starting point.
-            </blockquote>
-
-            <ol>
-                <li>
-                    Go to your test site and create a new folder named <code>scripts</code>. Within the scripts folder, create a new file called <code>main.js</code>, and save it.
-                </li>
-                <li>
-                    In your <code>index.html</code> file, enter this code on a new line, just before the closing <code>&#x3C;/body&#x3E;</code> tag:
-                    <pre><code>
-                        &#x3C;script src="scripts/main.js"&#x3E;&#x3C;/script&#x3E;
-                    </code></pre>
-                </li>
-                <li>
-                    This is doing the same job as the <code>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link" target="_blank">link</a>&#x3E; element for CSS. It applies the JavaScript to the page, so it can have an effect on the HTML (along with the CSS, and anything else on the page).
-                </li>
-                <li>
-                    Add this code to the <code>main.js</code> file:
-                    <pre><code>
-                            const myHeading = document.querySelector('h1');
-                            myHeading.textContent = 'Hello world!';
-                    </code></pre>
-                </li>
-                <li>
-                    Make sure the HTML and JavaScript files are saved. Then load <code>index.html</code> in your browser. You should see something like this:
-
-                    <img src="image/hello-world.png" alt="hello-world">
-                </li>
-            </ol>
-            <blockquote>
-                <p>
-                    Note: The reason the instructions (above) place the <code>&#x3E;script&#x3E;</code> element near the bottom of the HTML file is <strong>that the browser reads code in the order it appears in the file</strong>.
-                </p>
-                <p>
-                    If the JavaScript loads first and it is supposed to affect the HTML that hasn't loaded yet, there could be problems. Placing JavaScript near the bottom of an HTML page is one way to accommodate this dependency. To learn more about alternative approaches, see <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#script_loading_strategies" target="_blank">Script loading strategies</a>.
-                </p>
-            </blockquote>
-            <h1>What happened?</h1>
             <p>
-                The heading text changed to Hello world! using JavaScript. You did this by using a function called <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector" target="_blank">querySelector()</a></code> to grab a reference to your heading, and then store it in a variable called <code>myHeading</code>. This is similar to what we did using CSS selectors. When you want to do something to an element, you need to select it first.
+                By working through the articles listed below,  you will go from nothing to getting your first webpage online. Let's begin our journey!
             </p>
+        </section>
+        <section class="main-section" id="Installing_basic_software">
+            <header>Installing basic software</header>
+            
             <p>
-                Following that, the code set the value of the <code>myHeading</code> variable's <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent" target="_blank">textContent</a></code> property (which represents the content of the heading) to Hello world!.
+                When it comes to tools for building a website, there's a lot to pick from. If you're just starting, you might be confused by the array of code editors, frameworks, and testing tools out there. In <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Installing_basic_software" target="_blank">Installing basic software</a>, we will show you step-by-step how to install the software you need to begin some basic web development.
             </p>
-
-            <blockquote>
-                Note: Both of the features you used in this exercise are parts of the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model" target="_blank">Document Object Model (DOM) API</a>, which has the capability to manipulate documents.
-            </blockquote>
-
         </section>
-        <section class="main-section" id="Language_basics_crash_course">
-            <header>Language basics crash course</header>
-            <p>03</p>
+        <section class="main-section" id="What_will_your_website_look_like?">
+            <header>What will your website look like?</header>
+            <p>
+                Before you start writing the code for your website, you should plan it first. What information are you showcasing? What fonts and colors are you using? <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like" target="_blank">What will your website look like?</a> We outline a simple method you can follow to plan out your site's content and design.
+            </p>
         </section>
-        <section class="main-section" id="Supercharging_our_example_website">
-            <header>Supercharging our example website</header>
-            <p>04</p>
+        <section class="main-section" id="Dealling_with_files">
+            <header>>Dealling with files</header>
+            <p>A website consists of many files: text content, code, stylesheets, media content, and so on. When you're building a website, you need to assemble these files into a sensible structure and make sure they can talk to one another. <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files" target="_blank">Dealing with files</a> explains how to set up a sensible file structure for your website and what issues you should be aware of.</p>
         </section>
-        <section class="main-section" id="Conclusion">
-            <header>Conclusion</header>
-            <p>05</p>
+        <section class="main-section" id="HTML_basics">
+            <header>HTML basics</header>
+            <p>
+                Hypertext Markup Language (HTML) is the code that you use to structure your web content and give it meaning and purpose. For example, is my content a set of paragraphs or a list of bullet points? Do I have images inserted on my page? Do I have a data table? Without overwhelming you, <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">HTML basics</a> provide enough information to make you familiar with HTML.
+            </p>
+        </section>
+        <section class="main-section" id="A_quick_HTML_example">
+            <header>A quick HTML example</header>
+            <p>06</p>
+        </section>
+        <section class="main-section" id="CSS_basics">
+            <header>CSS basics</header>
+            <p>
+                Cascading Stylesheets (CSS) is the code that you use to style your website. For example, do you want the text to be black or red? Where should content be drawn on the screen? What background images and colors should be used to decorate your website? <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank">CSS basics</a> take you through what you need to get started.</p>
+        </section>
+        <section class="main-section" id="A_quick_CSS_example">
+            <header>>A quick CSS example</header>
+            <p>08</p>
+        </section>
+        <section class="main-section" id="JavaSCript_basics">
+            <header>JavaSCript basics</header>
+            <p>
+                JavaScript is the programming language that you use to add interactive features to your website. Some examples could be games, things that happen when buttons are pressed or data is entered in forms, dynamic styling effects, animation, and much more. <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics" target="_blank">JavaScript basics</a> give you an idea of what is possible with this exciting language, and how to get started.
+            </p>
+        </section>
+        <section class="main-section" id="A_quick_JavaScript_example">
+            <header>A quick JavaScript example</header>
+            <p>10</p>
+        </section>
+        <section class="main-section" id="Publishing_your_website">
+            <header>Publishing your website</header>
+            <p>
+                Once you have finished writing the code and organizing the files that make up your website, you need to put it all online so people can find it. <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Publishing_your_website" target="_blank">Publishing your sample code</a> describes how to get your simple sample code online with minimum effort.
+            </p>
+            <code></code>
+            <code></code>
+            <code></code>
+            <code></code>
+            <code></code>
+        </section>
+        <section class="main-section" id="How_the_Web_works">
+            <header>How the Web works</header>
+            <p>When you access your favorite website, a lot of complicated things happen in the background that you may not know about. <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works" target="_blank">How the web works</a> outlines what happens when you view a webpage on your computer.</p>
+        </section>
+        <section class="main-section" id="A_quick_example_applying_HTML,_CSS_and_JavaScript">
+            <header>A quick example applying HTML, CSS and JavaScript</header>
+            <p>example</p>
         </section>
         <section class="main-section" id="See_also">
             <header>See also</header>
-            <p>06</p>
-        </section>
-        <section class="main-section" id="In_this_module">
-            <header>In this module</header>
-            <p>07</p>
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com/playlist?list=PLo3w8EB99pqLEopnunz-dOOBJ8t-Wgt2g" target="-blank">Web Demystified</a>: A great series of videos explaining web fundamentals, aimed at complete beginners to web development. Created by <a href="https://twitter.com/JeremiePat" target="_blank">Jérémie Patonnier</a>. 
+                </li>
+                <li>
+                    <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/The_web_and_web_standards" target="_blank">The web and web standards</a>: This article provides some useful background on the Web — how it came about, what web standard technologies are, how they work together, why "web developer" is a great career to choose, and what kinds of best practices you'll learn about through the course.
+                </li>
+            </ul>
         </section>
         <section class="main-section" id="Reference">
             <header>Reference</header>
-            <p>08</p>
-        </section>
-        <section class="main-section" id="09">
-            <header>09</header>
-            <p>09</p>
-            <ul>
-                <li>A</li>
-                <li>B</li>
-                <li>C</li>
-                <li>D</li>
-                <li>E</li>
-            </ul>
-        </section>
-        <section class="main-section" id="10">
-            <header>10</header>
-            <p>10</p>
-            <code></code>
-            <code></code>
-            <code></code>
-            <code></code>
-            <code></code>
+            <p>Reference</p>
         </section>
       </main>
 </body>

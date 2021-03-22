@@ -1,43 +1,69 @@
+:root{
+    --color-light-gray: #eee;
+
+    --color-blue:  #83acd8;
+    --color-light-blue: #ADC4DD;
+    --color-sky-blue: #87cefa;
+    --color-cerulean-blue: #305eb3;
+    --color-forest-green: #71be71;
+    --color-green: #008000;
+    --color-light-green: #bcf4bc;
+    --color-gray: #c5c5c5;
+    --color-dark-gray: #8a8a8a;
+    --color-silver: #cfcfcf;
+    --color-black: #000000;
+    --color-purple: #680475;
+}
+
 html,body{
     font-family: Calibri, Arial, Helvetica;
     margin: 0;
     padding: 0;
-    background-color: #EEE;
+    background-color: var(--color-light-gray);
     line-height: 1.5;
   }
+.main-section header {
+    color: rgb(2, 121, 121);
+    margin: 10px;
+    text-align: left;
+    font-size: 1.6em;
+    font-weight: 550;
+}
+
 
   #main-doc {
     margin-left: 350px;
   }
   #navbar {
+    display: flex;
     left: 0;
     top: 0px;
-    display: flex;
     position: fixed;
-    width: 250px;
+    width: 320px;
     height: 100%;
-
     border: solid;
     border-color: rgba(0, 22, 22, 0.4);
   }
   #navbar header {
     text-align: center;
-    font-size: 28px;
+    font-size: 30px; rgb(2, 121, 121);
     background-color:  rgb(2, 121, 121);
     color: white;
-    position: fixed;
-    width: 250px;
+    position: absolute;
+    width: 320px;
 
   }
   #navlinks {
-    margin-top: 40px;
+    margin-top: 45px;
+    background-color: yellowgreen;
   }
   #navbar ul {
     list-style-type: none; 
-    margin-left: -40px;
     font-size: 18px;
+    padding:0 ;
     overflow-y:auto;
     overflow-x:hidden;
+    background-color: violet;
 
   }
 
@@ -45,8 +71,8 @@ html,body{
     color: #4d4e53;
     border-top: 1px solid;
     list-style: none;
-    position: relative;
     width: 100%;
+    background-color: tomato;
   }
 
   #navbar a {
@@ -60,7 +86,7 @@ html,body{
     text-decoration: none; /* Remove underline from links */
   }
   #navbar a:hover {
-    background-color: rgb(2, 141, 141);
+    background-color: rgb(2, 179, 179);
     color: white;
     box-shadow: 0 2px 2px #777;
     transform: translateY(-2px);
@@ -75,24 +101,20 @@ html,body{
     }
     
     #navbar {
-      background-color: white;
-      position: absolute;
-      top: 0px;
-      padding: 0;
-      margin: 0;
-      white-space: nowrap;
-      width: 100%;
-      max-height: 190px;
-      border: none;
-      border-bottom: 2px solid;
+        white-space: nowrap;
+        width: 100%;
+        position: absolute;
+        max-height: 190px;
+        border: none;
+        border-bottom: 2px solid;
     }
     #navbar header {
         width: 100%;
-        height: 40px;
+        height: 50px;
     }
     #navbar ul {
         border: 1px solid;
-        height: 150px;
+        height: 170px;
 
     }
 
@@ -100,9 +122,9 @@ html,body{
         padding: 12px 600px 0px 20px;
     }
 
+    /* aumenta a letra do menu*/
     .nav-link {
-      font-size: 1rem;
-
+      font-size: 1.2rem;
     }
     
     #main-doc {
