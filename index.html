@@ -237,9 +237,46 @@
                 &#x3C;<span>/html</span>&#x3E;<br>
             </p>
 
+            <p>Now, let's add some new features to our example site to the main.js file.</p>
+            <ol>
+                <li> Adding an image changer</li>
+               
+                In this section, you will learn how to use JavaScript and DOM API features to alternate the display of one of two images. This change will happen as a user clicks the displayed image.
+                <ol>
+                    <li>Choose an image you want to feature on your example site. Ideally, the image will be the same size as the image you added previously, or as close as possible.</li>
+                    <li>Save this image in your images folder.</li>
+                    <li>Rename the image firefox2.png.</li>
+                    <li>Add the JavaScript below to your main.js file.</li>
+                    <li>Save all files and load index.html in the browser. Now when you click the image, it should change to the other one.</li>
+                </ol>
+                <li>
+                    Adding a personalized welcome message 
+                </li>
+                Let's also change the page title to a personalized welcome message when the user first visits the site. This welcome message will persist. Should the user leave the site and return later, we will save the message using the Web Storage API. We will also include an option to change the user, and therefore, the welcome message.
+            </ol>
+
             <p>
-                Next, let's change the page title to a personalized welcome message when the user first visits the site. This welcome message will persist. Should the user leave the site and return later, we will save the message using the Web Storage API. We will also include an option to change the user, and therefore, the welcome message.
+                First of all, in index.html, add the following line just before the &#x3C;<span>script</span>&#x3E; element:
             </p>
+
+            <pre><code>&#x3C;button&#x3E;Change user&#x3C;/button&#x3E;</code></pre>
+
+            <p class="code-screen lang-html">
+                .<br>.<br>.<br>
+                &emsp;&emsp;&emsp;&emsp;&#x3C;<span>p</span>&#x3E;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Read the &#x3C;<span>a</span><span class="att"> href</span>=<span class="inf">"https://www.mozilla.org/en-US/about/manifesto/"</span>&#x3E;Mozilla Manifesto&#x3C;<span>/a</span>&#x3E; to learn even more about the values and principles that guide the pursuit of our mission.<br>
+                &emsp;&emsp;&emsp;&emsp;&#x3C;<span>/p</span>&#x3E;<br>
+
+                &emsp;&emsp;&emsp;&emsp;&#x3C;<span>button</span>&#x3E;Change user&#x3C;<span>/button</span>&#x3E;<br>
+
+                &emsp;&emsp;&emsp;&emsp;&#x3C;<span>script</span><span class="att"> src</span>=<span class="inf">"scripts/main.js"</span>&#x3E;&#x3C;<span>/script</span>&#x3E;<br>
+
+                &emsp;&emsp;&#x3C;<span>/body</span>&#x3E;<br>
+                &#x3C;<span>/html</span>&#x3E;<br>
+            </p>
+
+            
+            
 
             
 
