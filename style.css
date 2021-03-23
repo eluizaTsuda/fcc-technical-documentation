@@ -150,61 +150,32 @@ p {
     padding: 10px;
     border-radius: 3px;
   }
-  .lang-html-element span {
-    color: #0065ff;
-  }
-  .lang-html-attribute {
-    color: rgb(20, 153, 48);
-  }
-  .lang-css span {
-    color: #7AF;
-  }
-  .lang-css span.h {
-    color: #FD0;
-  }
 
-  .lang-html span{
-    color:blue; 
-  }
-  .lang-html span.att {
-    color: rgb(31, 142, 179);
-  }
-  .lang-html span.inf {
-    color:orange;
-  }
-
-    /* -- HTML example code -- */
-    .lang-html span{
-        color:rgb(63, 63, 211);
-    }
-    .lang-html span.att {
-        color:rgb(31, 142, 179);
-    }
-    .lang-html span.inf {
-        color: orange;
-    }
+/* -- HTML example code -- */
+.lang-html span{
+    color:#0065ff; 
+}
+.lang-html span.att {
+    color:rgb(31, 142, 179);
+}
+.lang-html span.inf {
+    color: orange;
+}
   
-  /* -- CSS example code -- */
-  .lang-css span{
-      color:peru;
-  }
-  .lang-css span.att {
-      color:rgb(31, 142, 179);
-  }
-  .lang-css span.value {
+/* -- CSS and JS example code -- */
+.lang-css-js span{
+    color:peru;
+}
+.lang-css-js span.att {
+    color:rgb(31, 142, 179);
+}
+.lang-css-js span.value {
     color: lightgreen;
-  }
-  .lang-css span.inf {
-      color: orangered;
-  }
+}
+.lang-css-js span.inf {
+    color: orangered;
+}
 
-
-  .text-color-blue{color:rgb(63, 63, 211);}
-  .text-color-lightblue{color:rgb(31, 142, 179);}
-  .text-color-orange{color:orange;}
-  .text-color-orangered{color:orangered;}
-
-  
   /* -- Code --*/
   
 code {
