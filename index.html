@@ -63,9 +63,23 @@
             </p>
         </section>
         <section class="main-section" id="Dealling_with_files">
-            <header>>Dealling with files</header>
-            <p>A website consists of many files: text content, code, stylesheets, media content, and so on. When you're building a website, you need to assemble these files into a sensible structure and make sure they can talk to one another. <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files" target="_blank">Dealing with files</a> explains how to set up a sensible file structure for your website and what issues you should be aware of.</p>
+            <header>Dealling with files</header>
+            <p>A website consists of many files: text content, code, stylesheets, media content, and so on. When you're building a website, you need to assemble these files into a sensible structure and make sure they can talk to one another.
+            </p> 
+            <p>
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files" target="_blank">Dealing with files</a> explains how to set up a sensible file structure for your website and what issues you should be aware of.
+            </p>
+            <h3>What structure should your website have?</h3>
+            <p>Next, let's look at what structure our test site should have. The most common things we'll have on any website project we create are an index HTML file and folders to contain images, style files, and script files.</p>
+
+            <ol>
+                <li>index.html: This file will generally contain your homepage content, that is, the text and images that people see when they first go to your site. Using your text editor, create a new file called index.html and save it just inside your test-site folder.</li>
+                <li>images folder: This folder will contain all the images that you use on your site. Create a folder called images, inside your test-site folder.</li>
+                <li>styles folder: This folder will contain the CSS code used to style your content (for example, setting text and background colors). Create a folder called styles, inside your test-site folder.</li>
+                <li>scripts folder: This folder will contain all the JavaScript code used to add interactive functionality to your site (e.g. buttons that load data when clicked). Create a folder called scripts, inside your test-site folder.</li>
+            </ol>
         </section>
+
         <section class="main-section" id="HTML_basics">
             <header>HTML basics</header>
             <p>
@@ -113,7 +127,7 @@
             </p>
             <p>Consult the <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">HTML basics</a> to understand each part of the code presented above.</p>
 
-            <h2>Conclusion:</h2>
+            <h3>Conclusion:</h3>
             <p>
                 If you have followed all the instructions in this article, you should end up with a page that looks like the one below (<a href="https://mdn.github.io/beginner-html-site/" target="_blank">you can also view it here</a>):
             </p>
@@ -128,7 +142,7 @@
         </section>
 
         <section class="main-section" id="A_quick_CSS_example">
-            <header>>A quick CSS example</header>
+            <header>A quick CSS example</header>
             <p>Before starting the style.css file, open your index.html file. Paste the following line in the header (between the head&#x3E; and &#x3C;/head&#x3E; tags):</p>
 
             <pre></pre><code>&#x3C;link href="styles/style.css" rel="stylesheet" type="text/css"&#x3E;
@@ -186,7 +200,7 @@
             </p>
             <p>Consult the <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank">CSS basics</a> to understand each part of the code presented above.</p>
 
-            <h2>Conclusion:</h2>
+            <h3>Conclusion:</h3>
             <p>
                 If you followed all the instructions in this article, you should have a page that looks similar to this one below (<a href="https://mdn.github.io/beginner-html-site-styled/" target="_blank">you can also view it here</a>):
             </p>
@@ -202,7 +216,13 @@
         </section>
         <section class="main-section" id="A_quick_JavaScript_example">
             <header>A quick JavaScript example</header>
-            <p>10</p>
+            <p>In your index.html file, enter this code on a new line, just before the closing &#x3C;/body&#x3E; tag:</p>
+
+            <pre></pre><code>&#x3C;script src="scripts/main.js"&#x3E;&#x3C;/script&#x3E;
+            </code></pre>
+
+            
+
         </section>
         <section class="main-section" id="Publishing_your_website">
             <header>Publishing your website</header>
