@@ -163,7 +163,7 @@
 
             <p>Now let's improve the appearance of the example by adding more rules and information to the style.css file.</p>
 
-            <p class="code-screen lang-css-js">
+            <p class="code-screen lang-css">
                 <span>html </span>{<br>
                 &emsp;&emsp;<span class="att">font-size</span>:<span class="value"> 10px</span>;<br>   
                 &emsp;&emsp;<span class="att">font-family</span>:<span class="inf"> 'Open Sans'</span>,<span class="inf">sans-serif</span>;<br>
@@ -273,13 +273,67 @@
                 &#x3C;<span>/html</span>&#x3E;<br>
             </p>
             <p>
-                Now let's encode our main.js file.
+                Now let's code our main.js file.
             </p>
-            
-            
+**************
+            <p class="code-screen lang-js">
+                <span class="com">// Image switcher code</span><br><br>
+                <span>let </span><span class="var">myImage</span> = <span class="var">document</span>.<span class="met">querySelector</span>(<span class="inf">'img'</span>);<br><br>
 
-            
+                <span class="var">myImage</span>.<span class="met">onclick</span>=<span>function</span>() {<br>
 
+                &emsp;&emsp;<span>let </span><span class="var">mySrc</span> = <span class="var">myImage</span>.<span class="met">getAttribute</span>(<span class="inf">'src'</span>); <br>
+
+                &emsp;&emsp;<span class="cond">if</span>(<span class="var">mySrc</span> === <span class="inf">'images/firefox-icon.png'</span>) { <br>
+                
+                &emsp;&emsp;&emsp;&emsp;<span class="var">myImage</span>.<span class="met">getAttribute</span>(<span class="inf">'src'</span>,<span class="inf">'images/firefox2.png'</span>); <br>
+                
+                &emsp;&emsp;}<span class="cond"> else </span>{ <br>
+                    
+                &emsp;&emsp;&emsp;&emsp;<span class="var">myImage</span>.<span class="met">getAttribute</span>(<span class="inf">'src'</span>,<span class="inf">'images/firefox-icon.png'</span>); <br> 
+
+                &emsp;&emsp;} <br>
+                } <br>
+
+                <span class="com">// Personalized welcome message code</span><br><br>
+
+                <span>let </span><span class="var">myButton</span> = <span class="var">document</span>.<span class="met">querySelector</span>(<span class="inf">'button'</span>);<br>
+
+                <span>let </span><span class="var">myHeading</span> = <span class="var">document</span>.<span class="met">querySelector</span>(<span class="inf">'h1'</span>);<br><br>
+
+                <span>function </span><span class="met">setUserName</span>() { <br>
+                
+                &emsp;&emsp;<span>let </span><span class="var">myName</span> = <span  class="met">prompt</span>(<span class="inf">'Please enter your name.'</span>); <br>
+
+                &emsp;&emsp;<span class="cond">if</span>(!<span class="var">myName</span>) { <br>
+                &emsp;&emsp;&emsp;&emsp;<span class="met">setUserName </span>(); <br>
+                
+                &emsp;&emsp;}<span class="cond"> else </span>{ <br>
+
+                &emsp;&emsp;&emsp;&emsp;<span class="var">localStorage</span>.<span class="met">setItem</span>(<span class="inf">'name'</span>,<span class="var">myName</span>); <br>
+
+                &emsp;&emsp;&emsp;&emsp;<span class="var">myHeading.innerHTML</span> = <span class="inf">'Mozzila is cool, '</span> + <span class="var">myName</span>; <br>
+                &emsp;&emsp;} <br>
+                } <br>
+
+                <span class="cond">if</span>(!<span class="var">localStorage</span>).<span class="met">getItem</span>(<span class="inf">'name'</span>)) { <br>   
+
+                &emsp;&emsp;<span class="met">setUserName </span>(); <br>
+
+                }<span class="cond"> else </span>{ <br>
+
+                &emsp;&emsp;<span>let </span><span class="var">storedName</span> = <span class="var">localStorage</span>.<span class="met">getItem</span>(<span class="inf">'name'</span>); <br>
+
+                &emsp;&emsp;<span class="var">myHeading.innerHTML</span> = <span class="inf">'Mozzila is cool, '</span> + <span class="var">storedName</span>; <br>
+                } <br>
+
+                <span class="var">myButton</span>.<span class="met">onclick</span> = <span>function</span>() { <br>
+                &emsp;&emsp;<span class="met">setUserName</span>(); <br>
+                } <br>
+
+            </p>
+  
+*****************
         </section>
         <section class="main-section" id="Publishing_your_website">
             <header>Publishing your website</header>

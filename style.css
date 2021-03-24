@@ -153,7 +153,7 @@ p {
 
 /* -- HTML example code -- */
 .lang-html span{
-    color:#0065ff; 
+    color: #387BBD;
 }
 .lang-html span.att {
     color:rgb(31, 142, 179);
@@ -162,19 +162,41 @@ p {
     color: orange;
 }
   
-/* -- CSS and JS example code -- */
-.lang-css-js span{
+/* -- CSS example code -- */
+.lang-css span{
     color:peru;
 }
-.lang-css-js span.att {
+.lang-css span.att {
     color:rgb(31, 142, 179);
 }
-.lang-css-js span.value {
+.lang-css span.value {
     color: lightgreen;
 }
-.lang-css-js span.inf {
+.lang-css span.inf {
     color: orangered;
 }
+
+/* -- JS example code -- */
+.lang-js span{
+    color: #007ACC;
+}
+.lang-js span.var{
+    color: #00FFFF;
+}
+.lang-js span.met{
+    color: #EFF284;
+}
+.lang-js span.cond{
+    color: #FF00FF;
+}
+.lang-js span.inf{
+    color: #CC6633;
+}
+.lang-js span.com{
+    color: #3A9157;
+}
+
+
 
   /* -- Code --*/
   
