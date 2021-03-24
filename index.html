@@ -280,17 +280,17 @@
                 <span class="com">// Image switcher code</span><br><br>
                 <span>let </span><span class="var">myImage</span> = <span class="var">document</span>.<span class="met">querySelector</span>(<span class="inf">'img'</span>);<br><br>
 
-                <span class="var">myImage</span>.<span class="met">onclick</span>=<span>function</span>() {<br>
+                <span class="var">myImage</span>.<span class="met">onclick</span> = <span>function</span>() {<br>
 
                 &emsp;&emsp;<span>let </span><span class="var">mySrc</span> = <span class="var">myImage</span>.<span class="met">getAttribute</span>(<span class="inf">'src'</span>); <br>
 
                 &emsp;&emsp;<span class="cond">if</span>(<span class="var">mySrc</span> === <span class="inf">'images/firefox-icon.png'</span>) { <br>
                 
-                &emsp;&emsp;&emsp;&emsp;<span class="var">myImage</span>.<span class="met">getAttribute</span>(<span class="inf">'src'</span>,<span class="inf">'images/firefox2.png'</span>); <br>
+                &emsp;&emsp;&emsp;&emsp;<span class="var">myImage</span>.<span class="met">setAttribute</span>(<span class="inf">'src'</span>,<span class="inf">'images/firefox2.png'</span>); <br>
                 
                 &emsp;&emsp;}<span class="cond"> else </span>{ <br>
                     
-                &emsp;&emsp;&emsp;&emsp;<span class="var">myImage</span>.<span class="met">getAttribute</span>(<span class="inf">'src'</span>,<span class="inf">'images/firefox-icon.png'</span>); <br> 
+                &emsp;&emsp;&emsp;&emsp;<span class="var">myImage</span>.<span class="met">setAttribute</span>(<span class="inf">'src'</span>,<span class="inf">'images/firefox-icon.png'</span>); <br> 
 
                 &emsp;&emsp;} <br>
                 } <br>
@@ -306,7 +306,7 @@
                 &emsp;&emsp;<span>let </span><span class="var">myName</span> = <span  class="met">prompt</span>(<span class="inf">'Please enter your name.'</span>); <br>
 
                 &emsp;&emsp;<span class="cond">if</span>(!<span class="var">myName</span>) { <br>
-                &emsp;&emsp;&emsp;&emsp;<span class="met">setUserName </span>(); <br>
+                &emsp;&emsp;&emsp;&emsp;<span class="met">setUserName</span>(); <br>
                 
                 &emsp;&emsp;}<span class="cond"> else </span>{ <br>
 
@@ -316,9 +316,9 @@
                 &emsp;&emsp;} <br>
                 } <br>
 
-                <span class="cond">if</span>(!<span class="var">localStorage</span>).<span class="met">getItem</span>(<span class="inf">'name'</span>)) { <br>   
+                <span class="cond">if</span>(!<span class="var">localStorage</span>.<span class="met">getItem</span>(<span class="inf">'name'</span>)) { <br>   
 
-                &emsp;&emsp;<span class="met">setUserName </span>(); <br>
+                &emsp;&emsp;<span class="met">setUserName</span>(); <br>
 
                 }<span class="cond"> else </span>{ <br>
 

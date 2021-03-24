@@ -145,7 +145,7 @@ p {
   
   .code-screen {
     font-family: monospace;
-    background-color:black;
+    background-color:#333333;
     color: #fff;
     padding: 10px;
     border-radius: 3px;
@@ -156,10 +156,10 @@ p {
     color: #387BBD;
 }
 .lang-html span.att {
-    color:rgb(31, 142, 179);
+    color:#528CA5;
 }
 .lang-html span.inf {
-    color: orange;
+    color: #983537;
 }
   
 /* -- CSS example code -- */
@@ -173,18 +173,18 @@ p {
     color: lightgreen;
 }
 .lang-css span.inf {
-    color: orangered;
+    color: #A07E57;
 }
 
 /* -- JS example code -- */
 .lang-js span{
-    color: #007ACC;
+    color: #5023BC;
 }
 .lang-js span.var{
-    color: #00FFFF;
+    color: #4B76B1;
 }
 .lang-js span.met{
-    color: #EFF284;
+    color: #8E8250;
 }
 .lang-js span.cond{
     color: #FF00FF;
