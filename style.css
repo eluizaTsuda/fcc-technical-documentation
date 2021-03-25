@@ -12,7 +12,7 @@
     --color-dark-gray: #8a8a8a;
     --color-silver: #cfcfcf;
     --color-black: #000000;
-    --color-purple: #680475;
+    --color-purple: #ab35bb;
 }
 
 html,body{
@@ -116,12 +116,11 @@ p {
     #navbar ul {
         border: 1px solid;
         height: 170px;
-
     }
 
     #navbar a {
-        padding: 12px 600px 0px 20px;
-    }
+      padding: 12px 600px 0px 20px;
+  }
 
     /* aumenta a letra do menu*/
     .nav-link {
@@ -223,67 +222,20 @@ code {
   }
 
 
-
-  
 /* >>>>> Footer - coded by eluh! <<<<< */
 .footer-signed {
-  background-color: var(--color-dark-gray);
-  color:var(--color-black);
-  margin: 0 283px;
-  width: 81%;
-  height: 35px;
-  padding: 0px;
+  background-color: rgb(1, 87, 87);;
+  color:whitesmoke;
 }
-
-@media (max-width: 1500px) {
-  .footer-signed {
-    height: 75px;
-    width: 70%;
-    margin: 0 283px;
-    background-color: var(--color-forest-green);
-  }
-}
-
-@media (max-width: 860px) {
-  .footer-signed {
-    height: 55px;
-    width: 78%;
-    margin: 0;
-    width: 100%;
-    background-color:sandybrown;
-  }
-}
-
-@media (max-width: 750px) {
-  .footer-signed {
-    height: 70px;
-    margin: 0;
-    width: 100%;
-    background-color: var(--color-sky-blue);
-  }
-}
-@media (max-width: 550px) {
-  .footer-signed {
-    height: 80px;
-    text-align: center;
-    margin: 0;
-    width: 100%;
-    background-color:rgb(2, 121, 121);
-  }
-}
-
 .col-coded-sign {
   color: var(--color-purple);
   font-family: Princess Sofia, Calibri;
   font-size: 20px;
   font-weight: 900;
 }  
-
 .small-font14 {
   font-size: 14px;
 }
-
 .strong-black-font{
   font-weight:600;
-  color: var(--color-black);
 }
