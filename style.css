@@ -1,62 +1,84 @@
 :root{
+    --color-white-smoke: #f5f5f5;
     --color-light-gray: #eee;
+    --color-dark-gray: #4d4e53;
+    --color-very-dark-gray: #333333;
+    --color-grayish-green: #8dacac;
+    --color-surfie-green: #027979;
+    --color-dark-surfie-green: #015757;
+    --color-light-surfie-green: #019292;
+    --color-dark-green: #001616;
 
-    --color-blue:  #83acd8;
-    --color-light-blue: #ADC4DD;
-    --color-sky-blue: #87cefa;
-    --color-cerulean-blue: #305eb3;
-    --color-forest-green: #71be71;
-    --color-green: #008000;
-    --color-light-green: #bcf4bc;
-    --color-gray: #c5c5c5;
-    --color-dark-gray: #8a8a8a;
-    --color-silver: #cfcfcf;
+    --color-dark-blue: #387BBD;
+    --color-grayish-blue: #528CA5;
+    --color-dark-red: #983537;
+
+    --color-grayish-orange: #cd853f;
+    --color-strong-blue: #1f8eb3;
+    --color-lime-green: #90ee90;
+    --color-dark-orange: #a07e57;
+
+    --color-strong-violet: #5023BC;
+    --color-moderate-blue: #4B76B1;
+    --color-ochre-yellow: #8E8250;
+    --color-pink: #FF00FF;
+    --color-ochre-orange: #CC6633;
+    --color-green: #3A9157;
+
+
+
+
+
+
+
     --color-black: #000000;
     --color-purple: #ab35bb;
 }
 
 html,body{
-    font-family: Calibri, Arial, Helvetica;
-    margin: 0;
-    padding: 0;
-    background-color: var(--color-light-gray);
-    line-height: 1.5;
-    font-size: 1.1em;
-  }
+  font-family: Calibri, Arial, Helvetica;
+  background-color: var(--color-light-gray);
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-size: 1.1em;
+}
 
 p {
-    margin: 10px;
-}
-.main-section header {
-    color: rgb(2, 121, 121);
-    margin: 10px;
-    text-align: left;
-    font-size: 1.6em;
-    font-weight: 550;
+  margin: 10px;
 }
 
-  #main-doc {
-    margin-left: 300px;
-  }
-  #navbar {
-    display: flex;
-    left: 0;
-    top: 0px;
-    position: fixed;
-    width: 280px;
-    height: 100%;
-    border: solid;
-    border-color: rgba(0, 22, 22, 0.4);
-  }
+.main-section header {
+  color: var(--color-surfie-green);
+  margin: 10px;
+  font-size: 1.6em;
+  font-weight: 550;
+  text-align: left;
+}
+
+#main-doc {
+  margin-left: 300px;
+}
+
+#navbar {
+  display: flex;
+  position: fixed;
+  border: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+  left: 0;
+  top: 0px;
+  width: 280px;
+  height: 100%;
+}
   #navbar header {
     text-align: center;
-    font-size: 30px; rgb(2, 121, 121);
-    background-color:  rgb(2, 121, 121);
-    color: white;
     position: absolute;
+    font-size: 30px; 
     width: 280px;
-
+    color: var(--color-light-gray);
+    background-color: var(--color-surfie-green);
   }
+
   #navlinks {
     margin-top: 45px;
   }
@@ -70,162 +92,152 @@ p {
   }
 
   #navbar li {
-    color: #4d4e53;
+    color: var(--color-dark-gray);
     border-top: 1px solid;
     list-style: none;
     width: 100%;
   }
 
   #navbar a {
-
     flex: 1;
-    background-color: #eee;
-
-    color: black;
-    display: block; /* Make the links appear below each other */
     padding: 12px;
-    text-decoration: none; /* Remove underline from links */
+    background-color: var(--color-light-gray);
+    color: var(--color-black);
+    display: block;
+    text-decoration: none;
   }
+
   #navbar a:hover {
-    background-color: rgb(2, 179, 179);
-    color: white;
-    box-shadow: 0 2px 2px #777;
+    background-color:var(--color-light-surfie-green);
+    color: var(--color-light-gray);
+    box-shadow: 0 2px 2px var(--color-dark-gray);
     transform: translateY(-2px);
- 
   }
   
-  /*!-- ****************************** --*/
-
+  /* -- Responsive 860px --*/
   @media (max-width: 860px) {
     body {
       flex-direction: column;
     }
-    
     #navbar {
-        white-space: nowrap;
-        width: 100%;
-        position: absolute;
-        max-height: 190px;
-        border: none;
-        border-bottom: 2px solid;
+      white-space: nowrap;
+      width: 100%;
+      position: absolute;
+      max-height: 190px;
+      border: none;
+      border-bottom: 2px solid;
     }
     #navbar header {
-        width: 100%;
-        height: 50px;
+      width: 100%;
+      height: 50px;
     }
     #navbar ul {
-        border: 1px solid;
-        height: 170px;
+      border: 1px solid;
+      height: 170px;
     }
-
     #navbar a {
       padding: 12px 600px 0px 20px;
-  }
-
+    }
     /* aumenta a letra do menu*/
     .nav-link {
       font-size: 1.2rem;
     }
-    
     #main-doc {
-      margin-top: 250px;
-      margin-left: 0;
-      position: relative;
-
+    margin-top: 250px;
+    margin-left: 0;
+    position: relative;
     }
   }
 
-  /** -- IMG -- **/
-  .img-center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
- div {
-     text-align: center;
+/** -- IMG -- **/
+.img-center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
  }
 
-     
-  /** -- CODES -- **/
-  
-  .code-screen {
-    font-family: monospace;
-    background-color:#333333;
-    color: #fff;
-    padding: 10px;
-    border-radius: 3px;
-  }
+ div {
+  text-align: center;
+ }
+
+ /* -- Code box - green and black -- */
+.code-box{
+  font-family: monospace;
+  display: block;
+  text-align: left;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  border-radius: 5px;
+}
+.code-box.green{
+  background-color: var(--color-grayish-green);
+  padding: 5px;
+  margin: 0 10px;
+  line-height: 2;
+  white-space: pre-line;
+}
+.code-box.black{
+  background-color: var(--color-very-dark-gray);
+  color: var(--color-light-gray);
+  padding: 10px;
+}
 
 /* -- HTML example code -- */
 .lang-html span{
-    color: #387BBD;
+  color: var(--color-dark-blue);
 }
 .lang-html span.att {
-    color:#528CA5;
+  color: var(--color-grayish-blue);
 }
 .lang-html span.inf {
-    color: #983537;
+  color: var(--color-dark-red);
 }
   
 /* -- CSS example code -- */
 .lang-css span{
-    color:peru;
+  color:var(--color-grayish-orange);
 }
 .lang-css span.att {
-    color:rgb(31, 142, 179);
+  color:var(--color-strong-blue);
 }
 .lang-css span.value {
-    color: lightgreen;
+  color: var(--color-lime-green);
 }
 .lang-css span.inf {
-    color: #A07E57;
+  color: var(--color-dark-orange);
 }
 
 /* -- JS example code -- */
 .lang-js span{
-    color: #5023BC;
+  color: var(--color-strong-violet);
 }
 .lang-js span.var{
-    color: #4B76B1;
+  color: var(--color-moderate-blue);
 }
 .lang-js span.met{
-    color: #8E8250;
+  color: var(--color-ochre-yellow);
 }
 .lang-js span.cond{
-    color: #FF00FF;
+  color: var(--color-pink0FF);
 }
 .lang-js span.inf{
-    color: #CC6633;
+  color: var(--color-ochre-orange);
 }
 .lang-js span.com{
-    color: #3A9157;
+  color: var(--color-green);
 }
-
-
-
-  /* -- Code --*/
-  
-code {
-    font-size: 1.2em;
-    padding: 5px;
-    margin: 0 10px;
-    border-radius: 5px;
-    line-height: 2;
-    display: block;
-    text-align: left;
-    white-space: pre-line;
-    position: relative;
-    word-break: normal;
-    word-wrap: normal;
-    background-color:rgb(141, 172, 172);
-  }
-
 
 /* >>>>> Footer - coded by eluh! <<<<< */
 .footer-signed {
-  background-color: rgb(1, 87, 87);;
-  color:whitesmoke;
+  background-color: var(--color-dark-surfie-green);
+  color: var(--color-white-smoke);
+  margin-left: 300px;
+}
+@media (max-width: 860px) {
+  .footer-signed {
+    margin-left: 0;
+  }
 }
 .col-coded-sign {
   color: var(--color-purple);
