@@ -149,6 +149,12 @@ p {
   }
 
 /** -- IMG -- **/
+@media (max-width: 450px) {
+  img {
+    max-width: 275px;
+  }
+}
+
 .img-center{
   display: block;
   margin-left: auto;
