@@ -1,5 +1,4 @@
 :root{
-    --color-white-smoke: #f5f5f5;
     --color-light-gray: #eee;
     --color-dark-gray: #4d4e53;
     --color-very-dark-gray: #333333;
@@ -231,8 +230,9 @@ p {
 /* >>>>> Footer - coded by eluh! <<<<< */
 .footer-signed {
   background-color: var(--color-dark-surfie-green);
-  color: var(--color-white-smoke);
+  color: var(--color-light-gray);
   margin-left: 300px;
+  margin-top: 50px;
 }
 @media (max-width: 860px) {
   .footer-signed {
