@@ -21,6 +21,7 @@ html,body{
     padding: 0;
     background-color: var(--color-light-gray);
     line-height: 1.5;
+    font-size: 1.1em;
   }
 
 p {
@@ -136,11 +137,17 @@ p {
   }
 
   /** -- IMG -- **/
-  img {
+  .img-center {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
+
+ div {
+     text-align: center;
+ }
+
+     
   /** -- CODES -- **/
   
   .code-screen {
@@ -214,4 +221,69 @@ code {
     word-wrap: normal;
     background-color:rgb(141, 172, 172);
   }
+
+
+
   
+/* >>>>> Footer - coded by eluh! <<<<< */
+.footer-signed {
+  background-color: var(--color-dark-gray);
+  color:var(--color-black);
+  margin: 0 283px;
+  width: 81%;
+  height: 35px;
+  padding: 0px;
+}
+
+@media (max-width: 1500px) {
+  .footer-signed {
+    height: 75px;
+    width: 70%;
+    margin: 0 283px;
+    background-color: var(--color-forest-green);
+  }
+}
+
+@media (max-width: 860px) {
+  .footer-signed {
+    height: 55px;
+    width: 78%;
+    margin: 0;
+    width: 100%;
+    background-color:sandybrown;
+  }
+}
+
+@media (max-width: 750px) {
+  .footer-signed {
+    height: 70px;
+    margin: 0;
+    width: 100%;
+    background-color: var(--color-sky-blue);
+  }
+}
+@media (max-width: 550px) {
+  .footer-signed {
+    height: 80px;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    background-color:rgb(2, 121, 121);
+  }
+}
+
+.col-coded-sign {
+  color: var(--color-purple);
+  font-family: Princess Sofia, Calibri;
+  font-size: 20px;
+  font-weight: 900;
+}  
+
+.small-font14 {
+  font-size: 14px;
+}
+
+.strong-black-font{
+  font-weight:600;
+  color: var(--color-black);
+}
