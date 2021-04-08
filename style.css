@@ -6,8 +6,7 @@
     --color-surfie-green: #027979;
     --color-dark-surfie-green: #015757;
     --color-light-surfie-green: #019292;
-    --color-dark-green: #001616;
-
+    
     --color-dark-blue: #387BBD;
     --color-grayish-blue: #528CA5;
     --color-dark-red: #983537;
@@ -57,7 +56,7 @@ p {
   display: flex;
   position: fixed;
   border: solid;
-  border-color: rgba(0, 22, 22, 0.4);
+  border-color: var(--color-grayish-green);
   left: 0;
   top: 0px;
   width: 280px;
@@ -153,13 +152,13 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
- }
+}
 
- div {
+div {
   text-align: center;
- }
+}
 
- /* -- Code box - green and black -- */
+/* -- Code box - green and black -- */
 .code-box{
   font-family: monospace;
   display: block;
